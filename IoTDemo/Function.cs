@@ -20,7 +20,7 @@ namespace IoTDemo
     {
 
         /// <summary>
-        /// A simple function that takes a string and does a ToUpper
+        /// A simple function that takes a IoTButton click event and sends to Kinesis Data Stream
         /// </summary>
         /// <param name="input"></param>
         /// <param name="context"></param>
