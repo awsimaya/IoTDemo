@@ -23,7 +23,7 @@ The solution creates Lambda function using C# that processes events from a AWS I
 * Follow the instructions to create a new IAM Role or use choose an existing one as approprite and click **Next**
 * Click **Create delivery stream** in the _Review_ screen
 
-# Project setup (for Visual Studio on Windows with AWS Toolkit installed)
+## Project setup (for Visual Studio on Windows with AWS Toolkit installed)
 * Clone this repo on your machine
 * Change the **StreamName** property to the name of the Kinesis Data Stream you created in the first step 
 * Make sure the AWS region is appropriate as well
@@ -41,7 +41,7 @@ using (var kinesisClient = new AmazonKinesisClient(Amazon.RegionEndpoint.USEast1
 * Make sure the Lambda function has is assigned to a Role that has access to the following policies
    > - AWSLambdaFullAccess
    > - AWSKinesisFullAccess
-# Setup your AWS IoTButton
+## Setup your AWS IoTButton
 * [Follow this instructions](https://docs.aws.amazon.com/iot/latest/developerguide/configure-iot.html) to setup your IoTButton
 * Once setup, you should be able to see the Lambda function on the AWS Button phone app. Configure the button to send the events to the lambda function by associating the function in the app
 * Now the button is all set to send events to the Lambda function you just created
